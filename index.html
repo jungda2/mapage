@@ -1,0 +1,226 @@
+<doctype html>
+<html lang="ko">
+
+<head>
+		<meta charset = "utf-8">	
+	
+		<!-- ★수정 포인트1- 아래 title명령어 안에 텍스트를 변경하면 브라우저 상단 탭바에 출력되는 제목을 변경할 수 있습니다.
+				ctrl+s(저장) 이후 브라우저에서 새로고침(F5) 확인 -->
+
+		<title>정다이 포트폴리오</title>
+
+
+		<style>
+
+				*{ margin:0; padding:0; border:0; background: none; text-decoration:none; list-style:none; }
+				header{ position: fixed; left:0; top:0; z-index:1; height:50px; width:100%;   background: rgba(0,0,0,0.8); box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+				h1{ float:left; color:#fff; font-size:16px; line-height:50px; margin-left:50px; }
+				nav{ float:right; margin-right:50px; text-align:left; }
+				button{ color:#fff; cursor:pointer; }
+				button:hover{ text-decoration:underline; }
+
+				nav button{ line-height:50px;  margin:0 20px;}
+		
+				#container{ text-align:center;  width:1200px; margin: 0 auto; }
+
+
+
+				section{ padding-top:50px; height:950px;}
+				section img{ width:100%; }
+
+				.c1{ width:1200px; overflow:hidden;  }
+				.slide{ display:flex; width:300%; }
+
+				.slide_btn{ position: absolute;  margin: -400px 0 0 1080px;  }
+				.slide_btn button{ width:10px; height:10px; margin:0 5px;  border:2px solid rgba(0,0,0,0);  background:#000; border-radius:20px; }
+				.slide_btn button:hover{ border:2px solid #000;  background:#fff; }
+
+				.works_wrap{ width:1200px;  padding-top:80px; }
+
+				.works_wrap>div{ width:3000%; clear:both; }
+				.works_wrap>div:not(:first-child){ display:none; }
+				.works_btn{ position:absolute;  z-index:2; }
+
+				.works_btn button{  width:130px; height:40px; color:#000; margin-top:30px; border:1px solid #d9d9d9; border-radius:20px;  }
+				.works_btn button:hover{ text-decoration: underline; }
+
+
+				.works_list_btn{ position:absolute; z-index:2; margin: 32px 0 0 400px;}
+				.works_list_btn button{ width:25px; height:25px; color:#000;  font-size:12px;  border:1px solid #d9d9d9; border-radius:20px; }
+				.works_btn_list button:hover{ text-decoration: underline; }
+
+				.works_btn button:first-child, .works_list_btn button:first-child{ color:#fff; background: #000; }
+
+				.works_wrap img{ display: block; width:1200px;  float:left;  }
+
+				.top{ position: fixed; right:20px; bottom:90px; width:40px; height:40px; background:#000; color:#fff; border-radius:30px; text-align:center; line-height:35px; font-size:14px; }
+				.top:hover{ cursor:pointer; opacity: 0.3; }
+			
+				footer{ 
+					position: fixed; left:0; bottom:0; z-index:2; height:50px; width:100%;   
+					background: rgba(0,0,0,0.8); box-shadow: 0 0 5px rgba(0,0,0,0.3); color:#fff; text-align:center; line-height:50px; font-size:14px; }
+
+		</style>
+
+		<script src="js/jquery-3.6.1.js"></script>
+		<script src="js/motion.js"></script>
+</head>
+
+
+
+<body>
+
+
+  <header>
+      <h1>UX/UI Design</h1>
+			<nav>
+				<!-- ★수정 포인트3- button 명령어 내에 텍스트는 변경 가능합니다!!-->
+				<button>Intro</button>  
+				<button>Profile</button>  
+				<button>Contents</button> 		                        
+                                                <button>Works</button>  
+				<button>Conclusion</button>
+      </nav>
+  </header>
+
+
+  <div id="container">
+
+          <!-- 첫번째 주제 그룹: 인트로-->
+          <section class="c1">
+							<ul class="slide">
+								<li><img src="images/intro.jpg" alt="인트로1"></li>
+								
+							
+          </section>
+
+          <!-- 두번째 주제 그룹: 프로필-->
+          <section class="c2">
+							<img src="images/profile.jpg" alt="프로필">
+          </section>
+
+          <!-- 세번째 주제 그룹: 콘텐츠-->
+          <section class="c3">
+							<img src="images/content.jpg" alt="콘텐츠">
+          </section> 
+
+          <!-- 네섯번째 주제 그룹: 포트폴리오-->
+          <section class="c4">
+
+	 						<div class="works_btn">
+									<button>반응형웹 디자인</button>
+									<button>앱 디자인 개발</button>
+							</div>
+
+	 						<div class="works_list_btn">
+									<button>1</button>
+									<button>2</button>
+									<button>3</button>
+									<button>4</button>
+									<button>5</button>
+									<button>6</button>
+									<button>7</button>
+									<button>8</button>
+									<button>9</button>
+									<button>10</button>
+									<button>11</button>
+									<button>12</button>
+									<button>13</button>
+									<button>14</button>
+									<button>15</button>
+									<button>16</button>
+									<button>17</button>
+									<button>18</button>
+									
+							</div>
+
+
+							<div class="works_wrap">
+									<div class="view1">
+											<!-- ★본인이 준비해둔 설명서 장수에 맞춰 추가,제거 가능합니다.-->
+											<img src="images/works/web1.jpg">
+											<img src="images/works/web2.jpg">
+											<img src="images/works/web3.jpg">
+											<img src="images/works/web4.jpg">
+											<img src="images/works/web5.jpg">
+											<img src="images/works/web6.jpg">
+											<img src="images/works/web7.jpg">
+											<img src="images/works/web8.jpg">
+											<img src="images/works/web9.jpg">
+											<img src="images/works/web10.jpg">
+											<img src="images/works/web11.jpg">
+											<img src="images/works/web12.jpg">
+											<img src="images/works/web13.jpg">
+											<img src="images/works/web14.jpg">
+											<img src="images/works/web15.jpg">
+									</div>
+
+									<div class="view2">
+											<img src="images/works/app1.jpg">
+											<img src="images/works/app2.jpg">
+											<img src="images/works/app3.jpg">
+											<img src="images/works/app4.jpg">
+											<img src="images/works/app5.jpg">
+											<img src="images/works/app6.jpg">
+											<img src="images/works/app7.jpg">
+											<img src="images/works/app8.jpg">
+											<img src="images/works/app9.jpg">
+											<img src="images/works/app10.jpg">
+											<img src="images/works/app11.jpg">
+											<img src="images/works/app12.jpg">
+											<img src="images/works/app13.jpg">
+											<img src="images/works/app14.jpg">
+											<img src="images/works/app15.jpg">
+											<img src="images/works/app16.jpg">
+											<img src="images/works/app17.jpg">
+											<img src="images/works/app18.jpg">
+											
+											
+
+									</div>
+
+
+							</div>
+
+ 					</section>
+
+          <!-- 다섯번째 주제 그룹: 마치며-->
+          <section class="c5">
+								<img src="images/conclusion.jpg" alt="마치며">
+          </section>
+
+					<!--페이지 상단으로 이동-->
+          <p class="top">top</p>
+
+  </div>
+
+
+
+
+
+   <footer>COPYRIGHT(C) UX/UI Design. ALLRIGHT RESERVED.2022</footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
